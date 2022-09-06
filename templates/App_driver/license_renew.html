@@ -1,0 +1,108 @@
+{% extends 'App_driver/basement.html' %}
+{% load static %}
+{% block title %}
+    License Renew
+{% endblock %}
+{% block main %}
+    <style>
+        .card-body img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .card-body p {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <div class="container" id="id-scanning-qr">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="justify-content-center mt-lg-5">
+                    <div class="card card-tale">
+                        <div class="card-body">
+                            <img src="{% static 'images/qrcode.png' %}" alt="Payment QR code">
+                            <p class="fs-30 mb-2">Pay with BKash</p>
+                            <p>Scan It and Pay (Reference: License Number)</p>
+                            <p>
+                                <button class="btn btn-primary" onclick="submitPaymentInfo(0)">Done</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+    <div class="container" id="id-payment-information" style="display: none;">
+        <div class="col-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Submit Payment Info</h4>
+                    <form class="forms-sample" method="post">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="exampleInputName1">Name</label>
+                            <input name="name" type="text" class="form-control" id="exampleInputName1" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword4">Sending Number</label>
+                            <input type="text" class="form-control" id="exampleInputPassword4" name="sending_number"
+                                   placeholder="Sending Number">
+                        </div>
+                        <div class="form-group">
+                            <label>Upload Screenshot</label>
+                            <input type="file" name="screenshot" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword4">Transaction ID</label>
+                            <input type="text" class="form-control" id="exampleInputPassword4" name="transactionID"
+                                   placeholder="Transaction ID">
+                        </div>
+                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                        <button class="btn btn-light" onclick="submitPaymentInfo(1)">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const licenseValidationTest = (expectedValue) => {
+            if (expectedValue === 0) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Your license timeout!',
+                    footer: '<a href="{% url 'App_main:case-register' %}">রিনিউ করতে চান?</a>'
+                })
+            } else {
+                Swal.fire(
+                    'Good Job!',
+                    'Your license is validated!',
+                    'success'
+                )
+            }
+        }
+
+        const submitPaymentInfo = (v) => {
+            if (v === 0) {
+                document.getElementById('id-payment-information').style.display = 'block';
+                document.getElementById('id-scanning-qr').style.display = 'none';
+            } else if (v === 1) {
+                document.getElementById('id-payment-information').style.display = 'none';
+                document.getElementById('id-scanning-qr').style.display = 'block';
+            }
+        }
+    </script>
+{% endblock %}
+{% block script %}
+dashboard.classList.remove('active');
+newCases.classList.remove('active');
+myLicense.classList.remove('active');
+licenseRenew.classList.add('active');
+trafficRules.classList.remove('active');
+{% endblock script %}
+

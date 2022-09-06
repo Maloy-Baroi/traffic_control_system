@@ -1,0 +1,140 @@
+{% extends 'baseElement.html' %}
+{% load static %}
+{% block title %}
+    Case Register
+{% endblock %}
+{% block main %}
+    <style>
+        label {
+            font-weight: 600;
+        }
+
+        #id-driver-table tbody tr {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #id-driver-table tbody tr:hover {
+            background: #4B49AC;
+            color: #ffffff;
+        }
+    </style>
+    <div class="container">
+        <div class="col-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title text-center mb-1">Register Case</h4>
+                    <p class="card-description text-center">
+                        Only Accessible for the traffic control
+                    </p>
+                    <form class="forms-sample" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                        <div class="form-group">
+                            <label for="exampleInputName1">Accused</label>
+                            <input class="form-control" name="accused" id="id_accused" type="hidden" value=""
+                                   placeholder="Selected Location">
+                            <input class="form-control" name='accused_search' id='id-accused-search' type='text'
+                                   onkeyup="FilterKeyWord();"
+                                   placeholder="Search the driving license">
+                            <table id="id-driver-table" style="display: none;">
+                                <tbody>
+                                {% for driver in all_driver %}
+                                    <tr>
+                                        <td data-label="Location" onclick="selectedLocation(`{{ driver.id }}`,`{{ driver }}`)">
+                                            {{ driver }}
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail3">Vehicle Number</label>
+                            {{ form.vehicle_number }}
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword4">Offence</label>
+                            {{ form.offence }}
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleSelectGender">Offence Place</label>
+                            {{ form.offence_happens_in_place }}
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleTextarea1">Offence Time</label>
+                            {{ form.occurrence_happened_time }}
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputCity1">Case Type</label>
+                            {{ form.caseType }}
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputCity1">Cost of Penalty</label>
+                            {{ form.cost_of_penalty }}
+                        </div>
+                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                        <button class="btn btn-light">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let inputs = document.getElementsByTagName('input');
+        let select = document.getElementsByTagName('select');
+        for (const input of inputs) {
+            input.classList.add('form-control');
+        }
+
+        for (const selectElement of select) {
+            selectElement.classList.add('form-control');
+        }
+
+    </script>
+
+    <script id="table-script" type="text/javascript">
+        // Specific column search script
+        function FilterKeyWord() {
+            // Declare variables
+            var input, filter, table, tr, td, i;
+            input = document.getElementById("id-accused-search");
+            filter = input.value.toLowerCase();
+            table = document.getElementById("id-driver-table");
+            tr = table.getElementsByTagName("tr");
+            table.style.display = 'block';
+
+            // Loop through all table rows, and hide those who don't match the search query
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                // change index to change your column search
+
+                if (td) {
+                    if (td.innerHTML.toLowerCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+            if (input.value === '') {
+                table.style.display = 'none';
+            }
+        }
+
+        function selectedLocation(accused_id, accused) {
+            var theLocation = document.getElementById("id_accused");
+            theLocation.setAttribute('value', accused_id);
+            document.getElementById("id-accused-search").value = accused;
+            document.getElementById("id-driver-table").style.display = 'none';
+        }
+    </script>
+{% endblock %}
+
+{% block script %}
+dashboard.classList.remove('active');
+caseRegister.classList.add('active');
+licenseCheck.classList.remove('active');
+signBook.classList.remove('active');
+trafficRules.classList.remove('active');
+{% endblock %}

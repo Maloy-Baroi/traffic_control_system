@@ -1,0 +1,691 @@
+{% extends 'App_driver/basement.html' %}
+{% block title %}
+    Signal Sign
+{% endblock %}
+{% block main %}
+    <section class="panel panel-info" id="traffic-signs-2" style="padding-top: 25px !important;">
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning.png"
+                     alt="This traffic sign warns for miscellaneous dangers for which there is no specific traffic sign. For examples: road accidents, flooded roads and roads blocked by fallen trees. It always have a supplementary sign attached that tells drivers of what hazard to expect."
+                     title="Warning for a danger with no specific traffic sign.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning">This traffic sign warns for miscellaneous <b>dangers</b> for which there is no specific
+                    traffic sign. For examples: road accidents, flooded roads and roads blocked by fallen trees. It
+                    always have a supplementary sign attached that tells drivers of what hazard to expect.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-aircraft.png"
+                     alt="This traffic sign warns that the road ahead is crossed by low-flying aircrafts. This is usually where a road passes close to the end of a runway. It warns drivers to be prepared for the sudden sight and loud noise of an aircraft."
+                     title="Warning for low-flying aircrafts.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-aircraft">This traffic sign warns that the road ahead is crossed by <b>low-flying</b> <a
+                        href="/en/bangladesh/overview/aircraft" target="_blank">aircrafts</a>. This is usually where a
+                    road passes close to the end of a runway. It warns drivers to be prepared for the sudden sight and
+                    loud noise of an aircraft.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-animal-cattle.png"
+                     alt="This traffic sign warns that cattle could be crossing the road ahead. The traffic sign is used where there are often cattle crossing or moving along a road."
+                     title="Warning for cattle on the road.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-animal-cattle">This traffic sign warns that <a href="/en/bangladesh/overview/livestock"
+                                                                              target="_blank">cattle</a> could be
+                    crossing the road ahead. The traffic sign is used where there are often cattle crossing or moving
+                    along a road.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-animal-deer.png"
+                     alt="This traffic sign warns that deers are likely to be crossing the road ahead. The traffic sign is used where there are often wild animals crossing the road."
+                     title="Warning for crossing deer.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-animal-deer">This traffic sign warns that <a href="/en/bangladesh/overview/roadkill"
+                                                                            target="_blank">deers</a> are likely to be
+                    crossing the road ahead. The traffic sign is used where there are often wild animals crossing the
+                    road.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-bump.png"
+                     alt="This traffic sign warns that there is a speed bump ahead which is designed to slow traffic. Driving too fast over a speed bump can cause serious damage to the vehicle."
+                     title="Warning for a speed bump.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-bump">This traffic sign warns that there is a <a
+                        href="/en/bangladesh/overview/speed-bump" target="_blank">speed bump</a> ahead which is designed
+                    to slow traffic. Driving too fast over a speed bump can cause serious damage to the vehicle.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-bumps.png"
+                     alt="This traffic sign warns that the road ahead has a defective surface, for example a road with potholes, ridges or sunken areas. The traffic sign is used where it is unsafe to continue at normal speed."
+                     title="Warning for a bad road surface.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-bumps">This traffic sign warns that the road ahead has a defective surface, for example a
+                    road with <a href="/en/bangladesh/overview/pothole" target="_blank">potholes</a>, ridges or sunken
+                    areas. The traffic sign is used where it is unsafe to continue at normal speed.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-children.png"
+                     alt="This traffic sign warns that this road is often used by children. Slow down and watch out for children playing. The traffic sign is placed near schools and playgrounds."
+                     title="Warning for children.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-children">This traffic sign warns that this road is often used by <a
+                        href="/en/bangladesh/overview/child" target="_blank">children</a>. Slow down and watch out for
+                    children playing. The traffic sign is placed near <a href="/en/bangladesh/overview/school"
+                                                                         target="_blank">schools</a> and playgrounds.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-crossroad-give-way.png"
+                     alt="This traffic sign warns for a crossroad and indicates who has priority. This traffic sign means you have to give way, you are not allowed to enter the crossroad unless the road is clear."
+                     title="Give way to all drivers.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-crossroad-give-way">This traffic sign warns for a <a
+                        href="/en/bangladesh/overview/crossroad" target="_blank">crossroad</a> and indicates who has
+                    priority. This traffic sign means you have to <a href="/en/bangladesh/overview/give-way"
+                                                                     target="_blank">give way</a>, you are not allowed
+                    to enter the crossroad unless the road is clear.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block"
+                     src="/img/asia/bd/signs/warning/warning-crossroad-give-way-main.png"
+                     alt="This traffic sign warns for a crossroad, give way to all drivers."
+                     title="Warning for a crossroad, give way to all drivers.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-crossroad-give-way-main">This traffic sign warns for a crossroad, <a
+                        href="/en/bangladesh/overview/give-way" target="_blank">give way</a> to all drivers.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block"
+                     src="/img/asia/bd/signs/warning/warning-crossroad-roundabout.png"
+                     alt="This traffic sign warns that there is a roundabout ahead. This traffic sign will be used where there have been accidents caused by drivers failing to see the roundabout in time to slow down."
+                     title="Warning for a roundabout.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-crossroad-roundabout">This traffic sign warns that there is a <a
+                        href="/en/bangladesh/overview/roundabout" target="_blank">roundabout</a> ahead. This traffic
+                    sign will be used where there have been accidents caused by drivers failing to see the roundabout in
+                    time to slow down.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block"
+                     src="/img/asia/bd/signs/warning/warning-crossroad-side-road-left.png"
+                     alt="This traffic sign warns for a crossroad with a side road from the left. You are driving on the main road, drivers on the side road have to give way."
+                     title="Warning for a crossroad with a side road on the left.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-crossroad-side-road-left">This traffic sign warns for a <a
+                        href="/en/bangladesh/overview/crossroad" target="_blank">crossroad</a> with a side road from the
+                    left. You are driving on the main road, drivers on the side road have to give way.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block"
+                     src="/img/asia/bd/signs/warning/warning-crossroad-side-road-right.png"
+                     alt="This traffic sign warns for a crossroad with a side road from the right. You are driving on the main road, drivers on the side road have to give way."
+                     title="Warning for a crossroad with side road on the right.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-crossroad-side-road-right">This traffic sign warns for a <a
+                        href="/en/bangladesh/overview/crossroad" target="_blank">crossroad</a> with a side road from the
+                    right. You are driving on the main road, drivers on the side road have to give way.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block"
+                     src="/img/asia/bd/signs/warning/warning-crossroad-side-roads.png"
+                     alt="This traffic sign warns for a crossroads with side roads from the left and right. You are driving on the main road, drivers on the side roads have to give way."
+                     title="Warning for a crossroad side roads on the left and right.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-crossroad-side-roads">This traffic sign warns for a <a
+                        href="/en/bangladesh/overview/crossroad" target="_blank">crossroads</a> with side roads from the
+                    left and right. You are driving on the main road, drivers on the side roads have to give way.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block"
+                     src="/img/asia/bd/signs/warning/warning-crossroad-side-roads_v1.png"
+                     alt="This traffic sign warns for a crossroad where the roads are not opposite to each other."
+                     title="Warning for a crossroad where the roads are not opposite to each other.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-crossroad-side-roads_v1">This traffic sign warns for a <a
+                        href="/en/bangladesh/overview/crossroad" target="_blank">crossroad</a> where the roads are not
+                    opposite to each other.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block"
+                     src="/img/asia/bd/signs/warning/warning-crossroad-side-roads_v2.png"
+                     alt="This traffic sign warns for a crossroad where the roads are not opposite to each other."
+                     title="Warning for a crossroad where the roads are not opposite to each other.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-crossroad-side-roads_v2">This traffic sign warns for a <a
+                        href="/en/bangladesh/overview/crossroad" target="_blank">crossroad</a> where the roads are not
+                    opposite to each other.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-crossroad-stop.png"
+                     alt="This traffic sign warns for a crossroad where visibility is poor or unsafe for drivers to enter the crossroad without stopping. It instructs drivers to bring their vehicles to a complete stop and give way to all drivers, do not proceed until it is safe to do so."
+                     title="Stop and give way to all drivers.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-crossroad-stop">This traffic sign warns for a <a href="/en/bangladesh/overview/crossroad"
+                                                                                target="_blank">crossroad</a> where
+                    visibility is poor or unsafe for drivers to enter the crossroad without stopping. It instructs
+                    drivers to bring their vehicles to a complete <a href="/en/bangladesh/overview/stop-sign"
+                                                                     target="_blank">stop</a> and <a
+                            href="/en/bangladesh/overview/give-way" target="_blank">give way</a> to all drivers, do not
+                    proceed until it is safe to do so.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-crossroad-t.png"
+                     alt="This traffic sign warns for an uncontrolled T-crossroad."
+                     title="Warning for an uncontrolled T-crossroad.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-crossroad-t">This traffic sign warns for an uncontrolled <a
+                        href="/en/bangladesh/overview/crossroad" target="_blank">T-crossroad</a>.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-crossroad-y.png"
+                     alt="This traffic sign warns for an uncontrolled Y-crossroad."
+                     title="Warning for an uncontrolled Y-crossroad.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-crossroad-y">This traffic sign warns for an uncontrolled <a
+                        href="/en/bangladesh/overview/crossroad" target="_blank">Y-crossroad</a>.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-curve-hairpin.png"
+                     alt="This traffic sign warns for a U-turn." title="Warning for a U-turn.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-curve-hairpin">This traffic sign warns for a <a href="/en/bangladesh/overview/u-turn">U-turn</a>.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-curve-hairpin_v1.png"
+                     alt="This traffic sign warns for a U-turn." title="Warning for a U-turn.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-curve-hairpin_v1">This traffic sign warns for a <a href="/en/bangladesh/overview/u-turn">U-turn</a>.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-curve-left.png"
+                     alt="This traffic sign warns that there is a curve to the left ahead. It may be necessary for drivers to reduce their speed significantly, especially when they can’t see how sharp the curve is. Curves which come after a long straight section, or which are very different from other curves on the road, are particularly dangerous."
+                     title="Warning for a curve to the left.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-curve-left">This traffic sign warns that there is a <b>curve to the left</b> ahead. It
+                    may be necessary for drivers to reduce their speed significantly, especially when they can’t see how
+                    sharp the curve is. Curves which come after a long straight section, or which are very different
+                    from other curves on the road, are particularly dangerous.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-curve-left-right.png"
+                     alt="This traffic sign warns that there is a double curve ahead, first to the left and then to the right. It may be necessary for drivers to reduce their speed significantly, especially when they can’t see how sharp the curves are. This traffic sign is only used where the first curve is right behind the second."
+                     title="Warning for a double curve, first left then right.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-curve-left-right">This traffic sign warns that there is a <b>double curve</b> ahead,
+                    first to the left and then to the right. It may be necessary for drivers to reduce their speed
+                    significantly, especially when they can’t see how sharp the curves are. This traffic sign is only
+                    used where the first curve is right behind the second.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-curve-right.png"
+                     alt="This traffic sign warns that there is a curve to the right ahead. It may be necessary for drivers to reduce their speed significantly, especially when they can’t see how sharp the curve is. Curves which come after a long straight section, or which are very different from other curves on the road, are particularly dangerous."
+                     title="Warning for a curve to the right.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-curve-right">This traffic sign warns that there is a <b>curve to the right</b> ahead. It
+                    may be necessary for drivers to reduce their speed significantly, especially when they can’t see how
+                    sharp the curve is. Curves which come after a long straight section, or which are very different
+                    from other curves on the road, are particularly dangerous.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-curve-right-left.png"
+                     alt="This traffic sign warns that there is a double curve ahead, first to the right and then to the left. It may be necessary for drivers to reduce their speed significantly, especially when they can’t see how sharp the curves are. This traffic sign is only used where the first curve is right behind the second."
+                     title="Warning for a double curve, first right then left.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-curve-right-left">This traffic sign warns that there is a <b>double curve</b> ahead,
+                    first to the right and then to the left. It may be necessary for drivers to reduce their speed
+                    significantly, especially when they can’t see how sharp the curves are. This traffic sign is only
+                    used where the first curve is right behind the second.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-dip.png"
+                     alt="This traffic sign warns for a dip in the road which is prone to flooding. A dip in the road may be difficult to see in advance."
+                     title="Warning for a dip in the road.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-dip">This traffic sign warns for a <b>dip in the road</b> which is prone to flooding. A
+                    dip in the road may be difficult to see in advance.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-elderly.png"
+                     alt="This traffic signs warns for the elderly." title="Warning for elderly.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-elderly">This traffic signs warns for the <a href="/en/bangladesh/overview/elderly"
+                                                                            target="_blank">elderly</a>.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-falling-rocks.png"
+                     alt="This traffic sign warns for falling rocks or rockfall. The sides along the road are unstable which may result in falling rocks or rocks on the road."
+                     title="Warning for falling rocks.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-falling-rocks">This traffic sign warns for <b>falling rocks</b> or <a
+                        href="/en/bangladesh/overview/rockfall" target="_blank">rockfall</a>. The sides along the road
+                    are unstable which may result in falling rocks or rocks on the road.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-height.png"
+                     alt="This traffic sign warns that the road ahead has a limited height."
+                     title="Warning for a limited height.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-height">This traffic sign warns that the road ahead has a <b>limited height</b>.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-loose-chippings.png"
+                     alt="This traffic sign warns that there are loose stone chips on the road surface ahead. It is used on roads which have been recently gravelled or sealed with stone chippings. It warns drivers to slow down to prevent chippings from being thrown up by the wheels."
+                     title="Warning for loose chippings on the road surface.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-loose-chippings">This traffic sign warns that there are <a
+                        href="/en/bangladesh/overview/loose-chippings" target="_blank">loose stone chips</a> on the road
+                    surface ahead. It is used on roads which have been recently gravelled or sealed with stone
+                    chippings. It warns drivers to slow down to prevent chippings from being thrown up by the wheels.
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-narrowing.png"
+                     alt="This traffic sign warns for a narrowing." title="Warning for a narrowing.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-narrowing">This traffic sign warns for a <b>narrowing</b>.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-pedestrian.png"
+                     alt="This traffic sign warns that the road ahead has no footpath. Drivers should be extra careful for possible pedestrians that are on the road."
+                     title="Warning for pedestrians.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-pedestrian">This traffic sign warns that the road ahead has no <a
+                        href="/en/bangladesh/overview/footpath" target="_blank">footpath</a>. Drivers should be extra
+                    careful for possible <a href="/en/bangladesh/overview/pedestrian" target="_blank">pedestrians</a>
+                    that are on the road.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block"
+                     src="/img/asia/bd/signs/warning/warning-pedestrian-crossing.png"
+                     alt="This traffic sign warns for a pedestrian crossing. The traffic sign is used at crossings that are difficult to see or on roads with a high speed. Drivers must give priority to pedestrians on the crossing."
+                     title="Warning for a crossing for pedestrians.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-pedestrian-crossing">This traffic sign warns for a <a
+                        href="/en/bangladesh/overview/pedestrian" target="_blank">pedestrian</a> <a
+                        href="/en/bangladesh/overview/crossing" target="_blank">crossing</a>. The traffic sign is used
+                    at crossings that are difficult to see or on roads with a high speed. Drivers must give priority to
+                    pedestrians on the crossing.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-quayside.png"
+                     alt="This traffic sign warns for a quay and is often used at the banks of rivers and canals. It means that the road passes close to the edge of deep water where there is a danger that vehicles may fall in."
+                     title="Warning for a quayside or riverbank.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-quayside">This traffic sign warns for a <a href="/en/bangladesh/overview/quay"
+                                                                          target="_blank">quay</a> and is often used at
+                    the banks of rivers and canals. It means that the road passes close to the edge of deep water where
+                    there is a danger that vehicles may fall in.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-rickshaw.png"
+                     alt="This traffic sign warns for rickshaws." title="Warning for rickshaws.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-rickshaw">This traffic sign warns for <a href="/en/bangladesh/overview/rickshaw"
+                                                                        target="_blank">rickshaws</a>.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-road-merge.png"
+                     alt="This traffic sign warns for two roads that are going to merge."
+                     title="Warning for two roads that merge.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-road-merge">This traffic sign warns for two roads that are going to <b>merge</b>.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block"
+                     src="/img/asia/bd/signs/warning/warning-road-narrowing-left.png"
+                     alt="This traffic sign warns for a road narrowing, the width of the road ahead will suddenly become smaller from the left."
+                     title="Warning for a road narrowing on the left.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-road-narrowing-left">This traffic sign warns for a <b>road narrowing</b>, the width of
+                    the road ahead will suddenly become smaller from the left.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block"
+                     src="/img/asia/bd/signs/warning/warning-road-narrowing-right.png"
+                     alt="This traffic sign warns for a road narrowing, the width of the road ahead will suddenly become smaller from the right."
+                     title="Warning for a road narrowing on the right.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-road-narrowing-right">This traffic sign warns for a <b>road narrowing</b>, the width of
+                    the road ahead will suddenly become smaller from the right.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-roadworks.png"
+                     alt="This traffic sign warns drivers of a temporary obstruction caused by roadworks ahead. Drivers must slow down and look out for traffic jams. The sign is only used temporary and will be removed when the roadworks are done."
+                     title="Warning for roadworks.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-roadworks">This traffic sign warns drivers of a temporary obstruction caused by <a
+                        href="/en/bangladesh/overview/roadworks" target="_blank">roadworks</a> ahead. Drivers must slow
+                    down and look out for <a href="/en/bangladesh/overview/traffic-jam" target="_blank">traffic jams</a>.
+                    The sign is only used temporary and will be removed when the roadworks are done.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-slippery-road.png"
+                     alt="This traffic sign warns that the road ahead probably has a slippery road surface. Keep the vehicle under extra control and do not make any wild steering movements, especially in curves."
+                     title="Warning for a slippery road surface.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-slippery-road">This traffic sign warns that the road ahead probably has a <a
+                        href="/en/bangladesh/overview/slippery-road" target="_blank">slippery road</a> surface. Keep the
+                    vehicle under extra control and do not make any wild steering movements, especially in curves.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-soft-verge.png"
+                     alt="This traffic sign warns drivers that the road ahead has a soft verge. The verge might be worn out, soft, slippery or uneven."
+                     title="Warning for a soft verge.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-soft-verge">This traffic sign warns drivers that the road ahead has a <b>soft</b> <a
+                        href="/en/bangladesh/overview/verge" target="_blank">verge</a>. The verge might be worn out,
+                    soft, slippery or uneven.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-steep-ascent.png"
+                     alt="This traffic sign warns for a steep ascent. If necessary, shift a gear back so that the vehicle has enough power to drive up the slope."
+                     title="Warning for a steep ascent.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-steep-ascent">This traffic sign warns for a <a href="/en/bangladesh/overview/slope"
+                                                                              target="_blank">steep ascent</a>. If
+                    necessary, <a href="/en/bangladesh/overview/shifting" target="_blank">shift</a> a gear back so that
+                    the vehicle has enough power to drive up the slope.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-steep-descent.png"
+                     alt="This traffic sign warns for a steep descent. If necessary, If necessary, shift a gear back so your vehicle doesn't drive too quickly of the descent."
+                     title="Warning for a steep descent.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-steep-descent">This traffic sign warns for a <a href="/en/bangladesh/overview/slope"
+                                                                               target="_blank">steep descent</a>. If
+                    necessary, If necessary, <a href="/en/bangladesh/overview/shifting" target="_blank">shift</a> a gear
+                    back so your vehicle doesn't drive too quickly of the descent.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-traffic-lights.png"
+                     alt="This traffic sign warns that there are traffic lights ahead. Watch out for the traffic light and make sure you can stop on time."
+                     title="Warning for a traffic light.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-traffic-lights">This traffic sign warns that there are <a
+                        href="/en/bangladesh/overview/traffic-lights" target="_blank">traffic lights</a> ahead. Watch
+                    out for the traffic light and make sure you can stop on time.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-train-crossing.png"
+                     alt="This traffic sign warns for a railroad crossing without barriers."
+                     title="Warning for a railroad crossing without barriers.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-train-crossing">This traffic sign warns for a <a
+                        href="/en/bangladesh/overview/railroad-crossing" target="_blank">railroad crossing</a> <b>without</b>
+                    <a href="/en/bangladesh/overview/barriers" target="_blank">barriers</a>.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block"
+                     src="/img/asia/bd/signs/warning/warning-train-crossing-barriers.png"
+                     alt="This traffic sign warns for a railroad crossing with barriers."
+                     title="Warning for a railroad crossing with barriers.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-train-crossing-barriers">This traffic sign warns for a <a
+                        href="/en/bangladesh/overview/railroad-crossing" target="_blank">railroad crossing</a>
+                    <b>with</b> <a href="/en/bangladesh/overview/barriers" target="_blank">barriers</a>.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-train-rail.png"
+                     alt="This sign indicates the location of a railroad crossing and is placed close to the tracks. It is used at all railroad crossings whether or not they have barriers."
+                     title="Warning for a railroad crossing with 1 railway.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-train-rail">This sign indicates the location of a <a
+                        href="/en/bangladesh/overview/railroad-crossing" target="_blank">railroad crossing</a> and is
+                    placed close to the <a href="/en/bangladesh/overview/track" target="_blank">tracks</a>. It is used
+                    at all railroad crossings whether or not they have <a href="/en/bangladesh/overview/barriers"
+                                                                          target="_blank">barriers</a>.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-train-rails.png"
+                     alt="This sign indicates the location of a railroad crossing and is placed close to the tracks. It is used at all railroad crossings whether or not they have barriers."
+                     title="Warning for a railroad crossing with more than 1 railway.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-train-rails">This sign indicates the location of a <a
+                        href="/en/bangladesh/overview/railroad-crossing" target="_blank">railroad crossing</a> and is
+                    placed close to the <a href="/en/bangladesh/overview/track" target="_blank">tracks</a>. It is used
+                    at all railroad crossings whether or not they have <a href="/en/bangladesh/overview/barriers"
+                                                                          target="_blank">barriers</a>.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row traffic-sign-row">
+            <div class="col-xs-12 col-md-4">
+                <img class="img-responsive center-block" src="/img/asia/bd/signs/warning/warning-two-way-traffic.png"
+                     alt="This traffic sign warns for a road with two-way traffic. It is used where a one-way traffic changes into a two-way traffic."
+                     title="Warning for a road with two-way traffic.">
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <p id="warning-two-way-traffic">This traffic sign warns for a road with <a
+                        href="/en/bangladesh/overview/two-way-traffic" target="_blank">two-way traffic</a>. It is used
+                    where a <a href="/en/bangladesh/overview/one-way-traffic" target="_blank">one-way traffic</a>
+                    changes into a two-way traffic.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <hr>
+                <p class="pull-right" style="margin-bottom: 0px;font-size: 15px;">
+
+
+                    <a style="display: none;padding-left: 20px;white-space:nowrap;cursor: pointer;"
+                       onclick="scrollToId('traffic-signs-2');return loadTheoryAjax('en', 'bangladesh', 'traffic-signs/warning-signs/advanced', '/traffic-signs');">Full
+                        text<img style="max-height: 40px;padding-left: 5px;margin-bottom: 5px;"
+                                 src="/img/international/layout/txt.png" alt=""></a>
+
+                    <a style="padding-left: 20px;white-space:nowrap;cursor: pointer;"
+                       onclick="scrollToId('traffic-signs-2');return loadTheoryAjax('en', 'bangladesh', 'traffic-signs/warning-signs', '/traffic-signs');">Simple
+                        text<img style="max-height: 40px;padding-left: 5px;margin-bottom: 5px;"
+                                 src="/img/international/layout/txt.png" alt=""></a>
+
+                    <a onclick="return loadAjaxId('en', 'bd', 'exam/traffic-signs', 'traffic-signs-2')"
+                       href="/en/bangladesh/practice-test" style="padding-left: 20px;white-space:nowrap;">
+                        Practice test<img style="max-height: 40px;padding-left: 5px;margin-bottom: 5px;"
+                                          src="/img/asia/bd/country-exam.png" alt=""></a>
+
+                    <a onclick="return loadAjaxId('en', 'bd', 'wikipedia/traffic-signs', 'traffic-signs-2')"
+                       href="/en/bangladesh/wikipedia/traffic-signs" target="_blank"
+                       style="padding-left: 20px;white-space:nowrap;">Wikipedia<img
+                            style="max-height: 40px;padding-left: 5px;margin-bottom: 5px;"
+                            src="/img/international/layout/wikipedia.png" alt=""></a>
+
+                    <a onclick="return loadAjaxId('en', 'bd', 'videos/traffic-signs', 'traffic-signs-2')"
+                       href="/en/bangladesh/videos/traffic-signs" style="padding-left: 20px;white-space:nowrap;">Youtube<img
+                            style="max-height: 40px;padding-left: 5px;margin-bottom: 5px;"
+                            src="/img/international/layout/videos.png" alt=""></a>
+
+                    <a onclick="return loadAjaxId('en', 'bd', 'comments/traffic-signs', 'traffic-signs-2')"
+                       href="/en/bangladesh/comments/traffic-signs" style="padding-left: 20px;white-space:nowrap;">Community<img
+                            style="max-height: 40px;padding-left: 5px;margin-bottom: 5px;"
+                            src="/img/international/layout/comments.png" alt=""></a>
+                </p>
+            </div>
+
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,57 @@
+{% extends 'App_driver/basement.html' %}
+{% block title %}
+    My License
+{% endblock %}
+{% block main %}
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="justify-content-center mt-lg-5">
+                    <div class="card card-tale">
+                        <div class="card-body">
+                            <img src="{{ driver.Profile_photo.url }}" alt="Profile Picture">
+                            {% if driver.validate %}
+                                <p class="mb-4" onclick="licenseValidationTest(1)">License Validation</p>
+                            {% else %}
+                                <p class="mb-4" onclick="licenseValidationTest(0)">License Validation</p>
+                            {% endif %}
+                            <p class="fs-30 mb-2">{{ driver.driving_license }}</p>
+                            <p>{{ driver.created_date }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+    <script>
+        const licenseValidationTest = (expectedValue) => {
+            if (expectedValue === 0) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Your license timeout!',
+                    footer: '<a href="{% url 'App_driver:license-renew' %}">রিনিউ করতে চান?</a>'
+                })
+            } else {
+                Swal.fire(
+                    'Good Job!',
+                    'Your license is validated!',
+                    'success'
+                )
+            }
+        }
+    </script>
+{% endblock %}
+{% block script %}
+dashboard.classList.remove('active');
+newCases.classList.remove('active');
+myLicense.classList.add('active');
+licenseRenew.classList.remove('active');
+trafficRules.classList.remove('active');
+{% endblock script %}
+
+
